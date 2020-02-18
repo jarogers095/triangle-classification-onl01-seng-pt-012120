@@ -27,10 +27,9 @@ class Triangle
   def illegal_tri()
     result = false
     
-    if @sides.any?(0)
+    if @sides.any?() {|side| side <= 0}
       result = true
-    elsif @sides.any?() {|side| side < 0}
-      result = true
+    elsif 
       
   end
     
