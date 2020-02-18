@@ -9,7 +9,16 @@ class Triangle
   end
   
   def kind()
-    
+    if illegal_tri()
+      return :illegal
+    elsif e_tri()
+      return :equilateral
+    elsif i_tri()
+      return :isosceles
+    else
+      return :scalene
+    end
+      
   end
     
   def e_tri()
@@ -23,7 +32,13 @@ class Triangle
   end
 
   def i_tri()
+    result = false
     
+    if sides[0] == sides[1] || sides[0] == sides[2] || sides[1] == sides[2]
+      return true
+    end
+    
+    return result
   end
   
   def s_tri()
