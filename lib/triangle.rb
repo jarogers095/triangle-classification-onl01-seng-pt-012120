@@ -10,11 +10,7 @@ class Triangle
   
   def kind()
     if illegal_tri()
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
+      raise TriangleError
     elsif e_tri()
       return :equilateral
     elsif i_tri()
