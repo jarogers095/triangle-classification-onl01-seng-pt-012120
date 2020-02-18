@@ -46,11 +46,11 @@ class Triangle
     
     if sides[0] <= 0 || sides[1] <= 0 || sides[2] <= 0
       result = true
-    elsif (sides[0] + sides[1]) < sides[2]
+    elsif (sides[0] + sides[1]) <= sides[2]
       result = true
-    elsif (sides[1] + sides[2]) < sides[0]
+    elsif (sides[1] + sides[2]) <= sides[0]
       result = true
-    elsif (sides[2] + sides[0]) < sides[1]
+    elsif (sides[2] + sides[0]) <= sides[1]
       result = true
     end
     
