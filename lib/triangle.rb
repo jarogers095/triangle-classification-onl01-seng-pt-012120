@@ -30,7 +30,14 @@ class Triangle
     if @sides.any?() {|side| side <= 0}
       result = true
     elsif (sides[0] + sides[1]) < sides[2]
-      
+      result = true
+    elsif (sides[1] + sides[2]) < sides[0]
+      result = true
+    elsif (sides[2] + sides[0]) < sides[1]
+      result = true
+    end
+    
+    return result
   end
     
   class TriangleError < StandardError
