@@ -29,7 +29,7 @@ class Triangle
     
     if @sides.any?() {|side| side <= 0}
       result = true
-    elsif 
+    elsif (sides[0] + sides[1]) < sides[2]
       
   end
     
