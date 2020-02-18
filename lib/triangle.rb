@@ -13,7 +13,13 @@ class Triangle
   end
     
   def e_tri()
-
+    result = false
+    
+    if sides[0] == sides[1] && sides[0] == sides[2]
+      result = true
+    end
+    
+    return result
   end
 
   def i_tri()
