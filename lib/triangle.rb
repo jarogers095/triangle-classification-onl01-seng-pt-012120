@@ -48,7 +48,7 @@ class Triangle
   def illegal_tri()
     result = false
     
-    if @sides.any?() {|side| side <= 0}
+    if sides[0] <= 0 || sides[1] <= 0 || sides[2] <= 0
       result = true
     elsif (sides[0] + sides[1]) < sides[2]
       result = true
