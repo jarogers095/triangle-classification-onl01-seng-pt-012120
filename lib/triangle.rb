@@ -29,7 +29,8 @@ class Triangle
     
     if @sides.any?(0)
       result = true
-    elsif @sides.any?
+    elsif @sides.any?() {|side| side < 0}
+      result = true
       
   end
     
