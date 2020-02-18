@@ -41,10 +41,6 @@ class Triangle
     return result
   end
   
-  def s_tri()
-    
-  end
-  
   def illegal_tri()
     result = false
     
